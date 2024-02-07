@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Aktiv Grotesk W01 Bold", sans-serif;
+    font-size: 0.875rem;
+    letter-spacing: -0.025em;
+    color: #222;
+    background-color: #fff;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5em;
+    padding-left: 1.5rem;
+  }
+  h1 {
+    font-size: 1.375rem;
+    letter-spacing: -0.0625em;
+    font-weight: normal;
+    padding-bottom: 2.5em;
+    padding-left: 1.5rem;
+  }
+  h2 {
+    font-size: 1rem;
+    font-weight: normal;
+    padding-bottom: 1.25em;
+    padding-left: 1.5rem;
+  }
+  h3 {
+    font-size: 0.625rem;
+    font-weight: normal;
+    padding-left: 1.5rem;
+  }
+  
+  p {
+    padding-left: 1.5rem;
+  }
+  
+  li {
+    list-style-type: none;
+    color: #222;
+    padding-left: 1.5rem;
+  }
+  img {
+    width: 100%;
+    filter: grayscale(100%);
+  }
+  img:hover {
+    filter: grayscale(0%);
+  }
+  a {
+    font-size: 0.625rem;
+  }
+  a:link {
+    text-decoration: none;
+    color: #222;
+  }
+  a:hover {
+    text-decoration: underline;
+    outline: 0; 
+  }
+  a:visited {
+    text-decoration: none;
+    color: #222;
+  }
+  footer {
+    font-size: 0.625rem;
+    color: #888;
+  }
+  footer p {
+    padding-bottom: 1.25em;
+  }
+  footer a:link {
+    text-decoration: none;
+    cursor: pointer;
+    color: #888;
+  }
+  footer a:hover {
+    text-decoration: underline;
+  }
+  footer a:visited {
+    text-decoration: none;
+    color: #888;
+  }
+  .introduction {
+    font-size: 0.875rem;
+    padding-bottom: 1.25em;
+    font-weight: 400;
+  }
+  .introduction p {
+    line-height: 1.375rem;
+  }
+  .latest-posts {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5em;
+  }
+  .masonry {
+    column-count: 2;
+    padding-bottom: 2.5em;
+  }
+  .brick {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .visibility {
+    display: none;
+  }
+  .toplink {
+    font-size: 1rem;
+    padding-bottom: 1.25em;
+    font-weight: 400;
+  }
+ 
+  @media only screen and (min-width: 769px) {
+    body {
+      display: grid;
+      grid-template-rows: repeat(5, auto);
+    }
+    header {
+      display: flex;
+      padding: 3em 0.75em 4em 0.75em;
+    }
+    header h1 { 
+      width: 40%;
+     } 
+    header nav {
+      width: 66.66%;
+      padding: 0 0.75em;
+    }
+    .introduction {
+      display: flex;
+      font-size: 1rem;
+  
+    }
+    .introduction > h2 {
+      width: 40%;
+    }
+    .introduction > p {
+      width: 66.66%;
+      padding: 0 10rem;
+    }
+    .latest-posts {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(2, minmax(min-content, auto));
+      padding-bottom: 8em;
+      line-height: 1.375rem;
+    }
+    .latest-posts ul li a:link {
+      color: #222;
+    }
+    .latest-posts h3 {
+      grid-column: 3/4;
+      grid-row: 1;
+    }
+    .col-1 {
+      grid-column: 3/4;
+      grid-row: 2;
+    }
+    .col-2 {
+      grid-column: 4/5;
+      grid-row: 2;
+    }
+    .col-3 {
+      grid-column: 5/6;
+      grid-row: 2;
+    }
+    .col-4 {
+      grid-column: 6/7;
+      grid-row: 2;
+    }
+    .visibility {
+      display: block;
+    }
+    footer {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+    }
+    footer h3 {
+      padding-bottom: rem;
+    }
+    footer section:nth-child(1) {
+      grid-column: 3/4;
+    }
+    .masonry {
+      column-count: 3;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 0;
+      padding-bottom: 2rem;
+    }
+  }
