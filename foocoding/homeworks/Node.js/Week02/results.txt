@@ -1,0 +1,11 @@
+Total Salary: 665487047
+Average Salary: 70080.78
+
+Minimum Salaries:
+firefighter have the Minimum Salary: 40001
+
+Maximum Salaries:
+doctor have the Maximum Salary: 99998
+
+Minimum age: 20
+Maximum age: 70
